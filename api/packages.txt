@@ -1,0 +1,12 @@
+bcryptjs - hasla 
+dotenv - przechowywanie waznych danych 
+express - wiadomo
+express-async-handler - error handler
+jsonwebtoken - tokeny dla uzytkownikow zeby komunikowac api i frontend
+mongoose - db
+morgan
+concurrently
+nodemon
+
+
+npm install bcryptjs dotenv express express-async-handler jsonwebtoken mongoose morgan concurrently nodemon
