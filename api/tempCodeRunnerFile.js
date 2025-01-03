@@ -16,24 +16,3 @@ app.listen(3000, ()=>{
 });
 
 
-
-// puzon2137
-// peXOLh5o7z8JQqTj
-
-//janpawel2137
-//kubus
-
-//mongodb+srv://kubus:janpawel2137@cluster0.pwrvu.mongodb.net/Project-0
-
-// mongodb+srv://puzon2137:peXOLh5o7z8JQqTj@cluster0.m8rkf.mongodb.net/REACT-NODE-APP
-
-
-// test route
-app.get("/api/products", (req, res) => {
-    res.json(products);
-})
-
-// app.get("/api/products/:id", (req, res) => {
-//     const product = products.find((product) => product.id === Number(req.params.id));
-//     res.json(product);
-// });
