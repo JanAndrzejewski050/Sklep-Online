@@ -1,7 +1,7 @@
 const express = require("express");
 const productRoute = express.Router();
 const AsyncHandler = require("express-async-handler");
-const Product=  require("../models/Product");
+const Product=  require("../models/Products");
 
 productRoute.get("/", AsyncHandler(
     async (req,res) => {
@@ -15,7 +15,7 @@ productRoute.get("/:id", AsyncHandler(
         const product = await Product.findById(req.params.id);
 
         if(product) {
-            
+            res.json(product);
         } else {
             res.status(404);
             throw new Error("Product does not exist");
