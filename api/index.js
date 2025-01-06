@@ -12,6 +12,7 @@ mongoose.connect('mongodb+srv://puzon2137:peXOLh5o7z8JQqTj@cluster0.m8rkf.mongod
 
 const databaseSeeder = require('./databaseSeeder');
 const userRoute = require("./routes/User");
+const productRoute = require("./routes/Product");
 
 app.use(express.json());
 
@@ -19,8 +20,10 @@ app.use(express.json());
 app.use('/api/seed', databaseSeeder);
 
 //routes for users
-app.use('/api/users',userRoute)
+app.use('/api/users',userRoute);
 
+//routes for products
+app.use('api/products',productRoute);
 
 
 
