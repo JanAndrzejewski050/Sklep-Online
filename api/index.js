@@ -2,7 +2,7 @@ const express = require("express");
 const dotenv = require("dotenv").config();
 const app = express();
 const products = require("./data/Products");
-
+const cors = reuire("cors");
 const mongoose = require("mongoose");
 
 // contact db
@@ -16,6 +16,8 @@ const productRoute = require("./routes/Product");
 const orderRoute = require("./routes/Order");
 
 app.use(express.json());
+
+app.use(cors());
 
 //seeder
 app.use('/api/seed', databaseSeeder);

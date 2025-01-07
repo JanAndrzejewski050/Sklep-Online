@@ -1,12 +1,11 @@
 
 import Layout from "../Layouts/Layouts"
-// @ts-ignore
 
 
 function ProductDetail() {
 
   return (
-    <>
+    
       
     <Layout>
     <section class="text-gray-600 body-font overflow-hidden">
@@ -93,7 +92,6 @@ function ProductDetail() {
         </section>
     </Layout>
 
-    </>
   )
 }
 

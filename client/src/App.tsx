@@ -1,21 +1,18 @@
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // @ts-ignore
-import Layout from "./Layouts/Layouts"
+import Home from './pages/Home';
 // @ts-ignore
-import Products from "./components/Products"
-
+import ProductDetail from './pages/ProductDetail';
 
 function App() {
-
   return (
-    <>
-      
-    <Layout>
-      <Products></Products>
-    </Layout>
-
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/detail/:id" element={<ProductDetail />} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;
