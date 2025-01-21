@@ -2,7 +2,7 @@ const express = require("express");
 const dotenv = require("dotenv").config();
 const app = express();
 const products = require("./data/Products");
-const cors = reuire("cors");
+cors = require("cors");
 const mongoose = require("mongoose");
 
 // contact db
