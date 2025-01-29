@@ -14,9 +14,11 @@ function ProductDetail() {
   const productReducer = useSelector((state)=> state.productReducer);
   const { loading, error, product } = productReducer;
 
-  useEffect(()=>{
+  useEffect(() => {
+    console.log("Dispatching productAction with id:", id);
     dispatch(productAction(id));
-  }, [dispatch, id])
+  }, [dispatch, id]);
+  
 
   return (
     <Layout>
